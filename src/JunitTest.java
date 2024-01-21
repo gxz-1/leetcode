@@ -72,7 +72,19 @@ class JunitTest {
         t373 t373 = new t373();
         t373.kSmallestPairs(new int[]{1,7,11},new int[]{2,4,6},3);
     }
+    @Test
+    void  test1046(){
+        new t1046().lastStoneWeight(new int[]{2,7,4,1,8,1});
+    }
 
+    @Test
+    void  testoffer109(){
+        new offer109().openLock(new String[]{"0201","0101","0102","1212","2002"},"0202");
+    }
+    @Test
+    void  test767(){
+        new t767().reorganizeString("aab");
+    }
 
 
 }
