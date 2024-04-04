@@ -86,5 +86,16 @@ class JunitTest {
         new t767().reorganizeString("aab");
     }
 
+    @Test
+    void test461(){
+        new t461().hammingDistance(1,4);
+    }
 
+    @Test
+    void  testm1003(){
+        new m1003().search(new int[]{1,1,1,1,1,2,1,1,1},2);
+    }
+
+    @Test
+    void testm0503(){new m0503().reverseBits(2147483647);}
 }
