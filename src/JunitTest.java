@@ -98,4 +98,9 @@ class JunitTest {
 
     @Test
     void testm0503(){new m0503().reverseBits(2147483647);}
+
+    @Test
+    void  testm0805(){
+        new m0805().multiply(3,4);
+    }
 }
