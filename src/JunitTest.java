@@ -72,21 +72,35 @@ class JunitTest {
         t373 t373 = new t373();
         t373.kSmallestPairs(new int[]{1,7,11},new int[]{2,4,6},3);
     }
+    @Test
+    void  test1046(){
+        new t1046().lastStoneWeight(new int[]{2,7,4,1,8,1});
+    }
 
     @Test
-    void  test845(){
-        t845 t845 = new t845();
-        t845.longestMountain(new int[]{0,1,2,3,4,5,6,7,8,9});
+    void  testoffer109(){
+        new offer109().openLock(new String[]{"0201","0101","0102","1212","2002"},"0202");
+    }
+    @Test
+    void  test767(){
+        new t767().reorganizeString("aab");
+    }
+
+    @Test
+    void test461(){
+        new t461().hammingDistance(1,4);
     }
 
     @Test
     void  testm1003(){
-        m1003 m1003 = new m1003();
-//        m1003.binSearch(new int[]{18, 19, 22, 30, 31, 38, 38, 40, 43, 43, 45, 45, 46, 46, 48, 53, 56, 58, 62, 62, 62, 65, 71, 75, 77, 78, 81, -81, -75, -74, -74, -72, -70, -69, -69, -67, -60, -59, -56, -55, -54, -52, -52, -51, -51, -44, -41, -41, -39, -38, -34, -32, -32, -31, -31, -27, -26, -24, -24, -23, -22, -20, -18, -18, -18, -17, -16, -14, -11, -9, -8, -6, -5, -3, -1, 4, 10, 11, 11, 15, 16},53);
-        m1003.binSearch(new int[]{-1, 0, 0, 3, 7, 8, 11, 16, 16, 18, 19, 23, -22, -20, -20, -19, -18, -12, -11, -7, -6, -4, -2},154494562);
+        new m1003().search(new int[]{1,1,1,1,1,2,1,1,1},2);
     }
 
+    @Test
+    void testm0503(){new m0503().reverseBits(2147483647);}
 
-
-
+    @Test
+    void  testm0805(){
+        new m0805().multiply(3,4);
+    }
 }
