@@ -103,4 +103,9 @@ class JunitTest {
     void  testm0805(){
         new m0805().multiply(3,4);
     }
+
+    @Test
+    void  testm0504(){
+        new m0504().findClosedNumbers(2);
+    }
 }
