@@ -108,4 +108,13 @@ class JunitTest {
     void  testm0504(){
         new m0504().findClosedNumbers(2);
     }
+
+    @Test
+    void  testm0806(){
+        List<Integer> A=new ArrayList<>();
+        A.add(2);
+        A.add(1);
+        A.add(0);
+        new m0806().hanota(A,new ArrayList<>(),new ArrayList<>());
+    }
 }
