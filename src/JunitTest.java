@@ -110,9 +110,11 @@ class JunitTest {
     }
 
     @Test
-    void testm1707(){
-        new m1707().trulyMostPopular(new String[]{"John(15)","Jon(12)","Chris(13)","Kris(4)","Christopher(19)"},
-                new String[]{"(Jon,John)","(John,Johnny)","(Chris,Kris)","(Chris,Christopher)"});
+    void  testm0806(){
+        List<Integer> A=new ArrayList<>();
+        A.add(2);
+        A.add(1);
+        A.add(0);
+        new m0806().hanota(A,new ArrayList<>(),new ArrayList<>());
     }
-
 }
