@@ -108,4 +108,11 @@ class JunitTest {
     void  testm0504(){
         new m0504().findClosedNumbers(2);
     }
+
+    @Test
+    void testm1707(){
+        new m1707().trulyMostPopular(new String[]{"John(15)","Jon(12)","Chris(13)","Kris(4)","Christopher(19)"},
+                new String[]{"(Jon,John)","(John,Johnny)","(Chris,Kris)","(Chris,Christopher)"});
+    }
+
 }
