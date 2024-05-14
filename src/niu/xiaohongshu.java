@@ -84,6 +84,11 @@ public class xiaohongshu {
         }
         System.out.println(dp[T][H]);
     }
+
+    public static void ex26(){
+        //每次对叶子点尝试染色，自底向上
+
+    }
 }
 
 
