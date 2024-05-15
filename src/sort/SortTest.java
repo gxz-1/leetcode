@@ -1,6 +1,7 @@
 package sort;
 
 import org.junit.jupiter.api.Test;
+import sort.impl.HeapSort;
 import sort.impl.QuickSort;
 
 import java.util.Arrays;
@@ -15,7 +16,8 @@ public class SortTest {
 
     @Test
     void test() {
-        SortMethod sortMethod=new QuickSort();
+//        SortMethod sortMethod=new QuickSort();
+        SortMethod sortMethod=new HeapSort();
         sortMethod.sort(arr1);
         sortMethod.sort(arr2);
         sortMethod.sort(arr3);
