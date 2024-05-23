@@ -18,4 +18,23 @@ public class ShellSort implements SortMethod {
             }
         }
     }
+
+    public void sort2(int[] arr) {
+        int len=arr.length;
+        int k=len/2;//分组的间距
+        while(k>=1) {
+            for(int i=k;i<len;++i) {
+                for(int j=i;j-k>=0;j-=k) {
+                    if(arr[j-k]>arr[j]) {
+                        int temp=arr[j-k];
+                        arr[j-k]=arr[j];
+                        arr[j]=temp;
+                    }else {
+                        break;
+                    }
+                }
+            }
+            k/=2;
+        }
+    }
 }
