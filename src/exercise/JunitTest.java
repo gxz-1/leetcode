@@ -126,4 +126,30 @@ class JunitTest {
         char[][] grid=new char[][]{{'1','1','0','0','0'},};
         new t200().numIslands(grid);
     }
+
+    @Test
+    void testm0104(){
+        m0104 m0104 = new m0104();
+        m0104.canPermutePalindrome("abdg");
+    }
+
+    @Test
+    void testi(){
+        //++i和i++区别：前者先让局部变量表自增1，再入操作数栈运算；后者先入操作数栈，运算完后再局部变量表自增
+        //运算顺序遵循从左到右，按优先级顺序进行,括号不会提高i++的优先级
+        int i=1;
+        int res=(++i)+(++i);
+        System.out.println("(++i)+(++i):"+res+" i="+i);//5 3
+        i=1;
+        res=(++i)+(i++);
+        System.out.println("(++i)+(i++):"+res+" i="+i);//4 3
+        i=1;
+        res=(i++)+(i++);
+        System.out.println("(i++)+(i++):"+res+" i="+i);//3 3
+        i=1;
+        res=(i++)+(++i)+(i++);
+        System.out.println("(i++)+(++i)+(i++):"+res+" i="+i);//7 4
+    }
+
+
 }
