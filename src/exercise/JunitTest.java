@@ -1,6 +1,7 @@
 package exercise;
 
 import org.junit.jupiter.api.Test;
+import tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -149,6 +150,13 @@ class JunitTest {
         i=1;
         res=(i++)+(++i)+(i++);
         System.out.println("(i++)+(++i)+(i++):"+res+" i="+i);//7 4
+    }
+
+    @Test
+    void  testm0408(){
+        m0408 m0408 = new m0408();
+        TreeNode treeNode = new TreeNode(new int[]{3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4});
+        m0408.lowestCommonAncestor(treeNode,new TreeNode(5),new TreeNode(4));
     }
 
 

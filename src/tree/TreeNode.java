@@ -13,11 +13,12 @@ public class TreeNode {
 
     }
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
 
-    TreeNode(ArrayList<Integer> vals){
+    //层次遍历建树
+    public TreeNode(ArrayList<Integer> vals){
         Queue<TreeNode> q=new LinkedList<>();
         q.offer(this);
         int index=0;
@@ -35,7 +36,27 @@ public class TreeNode {
             }
             index++;
         }
+    }
 
+    //层次遍历建树：-1表示null
+    public TreeNode(int[] vals){
+        Queue<TreeNode> q=new LinkedList<>();
+        q.offer(this);
+        int index=0;
+        val=vals[index++];
+        while (!q.isEmpty()){
+            TreeNode node=q.poll();
+            if(index<vals.length && vals[index]!=-1){//左边
+                node.left=new TreeNode(vals[index]);
+                q.offer(node.left);
+            }
+            index++;
+            if(index<vals.length && vals[index]!=-1){//右边
+                node.right=new TreeNode(vals[index]);
+                q.offer(node.right);
+            }
+            index++;
+        }
     }
 
 
