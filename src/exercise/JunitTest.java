@@ -159,5 +159,11 @@ class JunitTest {
         m0408.lowestCommonAncestor(treeNode,new TreeNode(5),new TreeNode(4));
     }
 
+    @Test
+    void  testm1606(){
+        m1606 m1606 = new m1606();
+        m1606.smallestDifference(new int[]{1,3,15,11,2},new int[]{23,127,235,19,8});
+    }
+
 
 }
