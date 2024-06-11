@@ -159,5 +159,11 @@ class JunitTest {
         m0408.lowestCommonAncestor(treeNode,new TreeNode(5),new TreeNode(4));
     }
 
+    @Test
+    void  testm1005(){
+        m1005 m1005 = new m1005();
+        m1005.findString(new String[]{"at", "", "", "", "ball", "", "", "car", "", "","dad", "", ""},"ball");
+    }
+
 
 }
