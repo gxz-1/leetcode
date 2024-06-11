@@ -165,5 +165,11 @@ class JunitTest {
         m1005.findString(new String[]{"at", "", "", "", "ball", "", "", "car", "", "","dad", "", ""},"ball");
     }
 
+    @Test
+    void  testm1606(){
+        m1606 m1606 = new m1606();
+        m1606.smallestDifference(new int[]{1,3,15,11,2},new int[]{23,127,235,19,8});
+    }
+
 
 }
