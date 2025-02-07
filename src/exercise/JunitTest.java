@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import tree.TreeNode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class JunitTest {
@@ -171,6 +172,12 @@ class JunitTest {
         m1606.smallestDifference(new int[]{1,3,15,11,2},new int[]{23,127,235,19,8});
     }
 
+    @Test
+    void  testm1722(){
+        m1722 m1722 = new m1722();
+        String[] sss=new String[]{"hot", "dot", "dog", "lot", "log", "cog"};
+        m1722.findLadders("hit","cog",Arrays.asList(sss));
+    }
 
 
 }
