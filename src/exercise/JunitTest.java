@@ -179,5 +179,14 @@ class JunitTest {
         m1722.findLadders("hit","cog",Arrays.asList(sss));
     }
 
+    @Test
+    void  testm1723(){
+        m1723 m1723 = new m1723();
+        m1723.findSquare(new int[][]{{1,0,1},{0,0,1},{0,0,1}});
+    }
+
+
+
+
 
 }
