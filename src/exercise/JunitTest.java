@@ -3,9 +3,7 @@ package exercise;
 import org.junit.jupiter.api.Test;
 import tree.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 class JunitTest {
 
@@ -183,6 +181,24 @@ class JunitTest {
     void  testm1723(){
         m1723 m1723 = new m1723();
         m1723.findSquare(new int[][]{{1,0,1},{0,0,1},{0,0,1}});
+    }
+
+    @Test
+    void  sss(){
+            int i = 1;
+            i = i++;
+            int j = i++;
+            int k = i + ++i * i++;
+            System.out.println("i="+i);
+            System.out.println("j="+j);
+            System.out.println("k="+k);
+
+    }
+
+    @Test
+    void testt76(){
+        t76 t76 = new t76();
+        t76.minWindow("a","aa");
     }
 
 
