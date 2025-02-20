@@ -17,7 +17,6 @@ public class TreeTest {
 		t.unit(2, 4);
 		t.unit(7, 5);
 		System.out.println(t.unionCount);
-		Collections.
     }
 
 }
