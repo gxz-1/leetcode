@@ -3,6 +3,9 @@ package tree;
 import exercise.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 
 public class TreeTest {
     @Test
@@ -14,6 +17,7 @@ public class TreeTest {
 		t.unit(2, 4);
 		t.unit(7, 5);
 		System.out.println(t.unionCount);
+		Collections.
     }
 
 }
