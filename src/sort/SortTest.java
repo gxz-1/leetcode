@@ -1,10 +1,7 @@
 package sort;
 
 import org.junit.jupiter.api.Test;
-import sort.impl.BaseSort;
-import sort.impl.HeapSort;
-import sort.impl.MergeSort;
-import sort.impl.QuickSort;
+import sort.impl.*;
 
 import java.util.Arrays;
 
@@ -21,7 +18,8 @@ public class SortTest {
 //        SortMethod sortMethod=new QuickSort();
 //        SortMethod sortMethod=new HeapSort();
 //        SortMethod sortMethod = new MergeSort();
-        SortMethod sortMethod=new BaseSort();
+//        SortMethod sortMethod=new BaseSort();
+        SortMethod sortMethod=new RadixSort();
         sortMethod.sort(arr1);
         sortMethod.sort(arr2);
         sortMethod.sort(arr3);
