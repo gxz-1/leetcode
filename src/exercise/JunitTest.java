@@ -201,6 +201,13 @@ class JunitTest {
         t76.minWindow("a","aa");
     }
 
+    @Test
+    void testt5(){
+        t5 t5 = new t5();
+        assert t5.method2("cbbd").equals("bb");
+        assert t5.method2("babad").equals("bab");
+        assert t5.method2("ccc").equals("ccc");
+    }
 
 
 
