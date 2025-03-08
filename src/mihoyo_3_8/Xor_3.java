@@ -1,7 +1,7 @@
 package mihoyo_3_8;
 
 import java.util.*;
-
+//TODO 未解决
 public class Xor_3 {
     static boolean[][] adj;  // adjacency matrix
     static String[] arr;

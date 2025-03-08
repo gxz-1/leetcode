@@ -13,7 +13,7 @@ public class Main_1 {
         }
     }
 
-
+    //TODO 对于字符串需要轮转（[0-a,a-end] 变成 [a-end,0-a]）、反转操作时，考虑用队列模拟
     private static String decode(String input) {
         Deque<Character> deque = new LinkedList<>();
         int p = 0;
