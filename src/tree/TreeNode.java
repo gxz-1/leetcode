@@ -3,6 +3,7 @@ package tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 
 public class TreeNode {
     public int val;
@@ -59,5 +60,47 @@ public class TreeNode {
         }
     }
 
+    /**
+     * 输出树：    {3,9,20,#,#,15,7}
+     * 输出层次遍历结果：[[3],[9,20],[15,7]]
+     */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String input = in.nextLine();
+        String s = input.substring(1, input.length() - 1);
+        String[] node = s.split(",");
+        int index = 0;
+        LinkedList<String> queue=new LinkedList<>();
+        if(!node[index].equals("#")){
+            queue.offer(node[index++]);
+        }
+        System.out.print("[");
+        while (!queue.isEmpty()){
+            int len=queue.size();
+            System.out.print("[");
+            for (int i = 0; i < len; i++) {
+                String peek = queue.poll();
+                System.out.print(peek);
+                if(i!=len-1){
+                    System.out.print(",");
+                }
+                if(index<node.length){
+                    if(!node[index].equals("#")){
+                        queue.offer(node[index]);
+                    }
+                    index++;
+                    if(!node[index].equals("#")){
+                        queue.offer(node[index]);
+                    }
+                    index++;
+                }
+            }
+            System.out.print("]");
+            if(!queue.isEmpty()){
+                System.out.print(",");
+            }
+        }
+        System.out.print("]");
+    }
 
 }
