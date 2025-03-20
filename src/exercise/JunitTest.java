@@ -209,6 +209,17 @@ class JunitTest {
         assert t5.method2("ccc").equals("ccc");
     }
 
+    @Test
+    void  testt146(){
+        t146 t146 = new t146(2);
+        t146.put(2,1);
+        t146.put(1,1);
+        t146.put(2,3);
+        t146.put(4,1);
+        t146.get(1);
+        t146.get(2);
+    }
+
 
 
 
