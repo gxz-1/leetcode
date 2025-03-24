@@ -36,7 +36,6 @@ public class t25 {
         ListNode slow = head;
         ListNode fast = head;//记录k个的头和尾
         ListNode pre = new ListNode();
-        new t25();
         pre.next = head;
         ListNode temp = pre;//便于返回结果
         ListNode after;//记录slow的前一个和fast的下一个
@@ -69,5 +68,44 @@ public class t25 {
         ListNode n = reserveK(node.next, fast);
         n.next = node;
         return node;
+    }
+}
+
+class t25_2 {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode beg = head;
+        ListNode end = head;
+        //额外定义一个头节点
+        ListNode res = new ListNode();
+        ListNode preend = res;
+        ListNode nextbeg = null;
+        while(beg!=null){
+            int count = k-1;
+            while(count>0 && end.next!=null){
+                end = end.next;
+                count--;
+            }
+            nextbeg = end.next;//先记录下一组的开始
+            reverse(beg,end);
+            //反转后beg为尾节点 end为头节点
+            beg.next = nextbeg;
+            preend.next = end;
+            //重置
+            preend = beg;
+            beg = nextbeg;
+            end = beg;
+        }
+        return res.next;
+    }
+
+    void reverse(ListNode beg,ListNode end){
+        ListNode pre = null;
+        ListNode temp =beg;
+        while(temp!=null && pre!=end){
+            ListNode nxt = temp.next;
+            temp.next = pre;
+            pre = temp;
+            temp = nxt;
+        }
     }
 }
