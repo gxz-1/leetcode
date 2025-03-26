@@ -220,6 +220,13 @@ class JunitTest {
         t146.get(2);
     }
 
+    @Test
+    void  testt25_2(){
+        t25_2 t25 = new t25_2();
+        ListNode head = new ListNode(new int[]{1, 2, 3, 4, 5});
+        t25.reverseKGroup(head,2);
+    }
+
 
 
 
