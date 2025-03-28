@@ -1,5 +1,6 @@
 package concurent;
 
+import java.util.Collection;
 import java.util.concurrent.atomic.*;
 
 public class AtomicExample {
@@ -25,7 +26,6 @@ public class AtomicExample {
             longAdder.increment();
         }
         System.out.println("LongAdder value: " + longAdder.sum());
-
         //AtomicReference示例
         //用于对引用类型变量进行原子操作
         AtomicReference<String> atomicRef = new AtomicReference<>("initial");
@@ -33,7 +33,6 @@ public class AtomicExample {
         boolean success = atomicRef.compareAndSet("initial", "updated");
         System.out.println("Update successful: " + success);
         System.out.println("AtomicReference value: " + atomicRef.get());
-
         //AtomicStampedReference示例
         //类似于 AtomicReference，但在内部增加了一个“标记”或“版本号”，用于解决 ABA 问题。
         AtomicStampedReference<String> stampedRef = new AtomicStampedReference<>("initial", 0);// 初始值 "initial"，初始版本号 0

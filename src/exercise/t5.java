@@ -1,6 +1,6 @@
 package exercise;
 
-//Manacher算法
+//最长回文子串：Manacher算法
 public class t5 {
     public String longestPalindrome(String s) {
         //0.扩展字符串
