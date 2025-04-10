@@ -17,7 +17,6 @@ public class Main3 {
             System.arraycopy(nextPos[i+1], 0, nextPos[i], 0, 26);
             nextPos[i][s.charAt(i) - 'a'] = i;
         }
-
         long result = 0L;
         for (int i = 0; i < n; i++) {
             int pos = i;
