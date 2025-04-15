@@ -13,7 +13,6 @@ public class SequentialPrint {
                 synchronized (lock) {
                     while (number <= 100) {
                         String threadName = Thread.currentThread().getName();
-
                         // 判断当前线程是否该打印
                         if ((number % 3 == 1 && threadName.equals("Thread-1")) ||
                             (number % 3 == 2 && threadName.equals("Thread-2")) ||
