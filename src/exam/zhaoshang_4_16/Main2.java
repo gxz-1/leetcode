@@ -2,7 +2,7 @@ package exam.zhaoshang_4_16;
 
 import java.util.Arrays;
 import java.util.Scanner;
-//java编程题：对于长度为n的int数组，每次操作令其中一个数-1，另一个数+1，经过多少次使得数组极差最小
+//TODO java编程题：对于长度为n的int数组，每次操作令其中一个数-1，另一个数+1，经过多少次使得数组极差最小，求最小的操作次数
 public class Main2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
