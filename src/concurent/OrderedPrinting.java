@@ -5,7 +5,6 @@ public class OrderedPrinting {
     private static volatile int  number = 1;
     // 同步对象
     private static final Object lock = new Object();
-
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {
             while (true) {

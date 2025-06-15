@@ -48,19 +48,14 @@ public class tx_hr {
         return "";
     }
     //第k大的元素
-    int getKTop(int[] arr,int k){
-        int len=arr.length;
-        PriorityQueue<Integer> heap=new PriorityQueue<>();
-        int i=0;
-        for (; i < k; i++) {
-            heap.add(arr[i]);
+    int getKTop(int[] nums,int k){
+        PriorityQueue<Integer> heap =  new PriorityQueue<>(Comparator.comparingInt(a -> -a));
+        for(int i = 0;i<nums.length;++i){
+            heap.add(nums[i]);
         }
-        //找第k大 == 找第len-k+1小的元素
-        for (int j = len-k+1; j > 1 ; i++,j--) {
-            if(arr[i]>heap.peek()){
-                heap.poll();
-                heap.offer(arr[i]);
-            }
+        while(k>1){
+            heap.poll();
+            k--;
         }
         return heap.peek();
     }
