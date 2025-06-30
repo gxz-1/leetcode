@@ -1,10 +1,6 @@
 package tree;
 
-import exercise.*;
 import org.junit.jupiter.api.Test;
-
-import java.util.Collections;
-import java.util.PriorityQueue;
 
 
 public class TreeTest {

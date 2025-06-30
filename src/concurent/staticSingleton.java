@@ -2,7 +2,7 @@ package concurent;
 
 import java.util.Scanner;
 
-public class Main {
+public class staticSingleton {
 
     public static class LazySingleton {
         private LazySingleton() { }
