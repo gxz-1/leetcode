@@ -227,6 +227,12 @@ class JunitTest {
         t25.reverseKGroup(head,2);
     }
 
+    @Test
+    void testt15(){
+        t15 t15 = new t15();
+        t15.threeSum(new int[]{-1,0,1,2,-1,-4});
+    }
+
 
 
 
