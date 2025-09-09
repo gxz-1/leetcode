@@ -1,6 +1,23 @@
 package exercise;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class t215 {
+    //数组中的第K个最大元素
+    public int findKthLargest2(int[] nums, int k) {
+        PriorityQueue<Integer> heap = new PriorityQueue<>(k);//小顶堆
+        for(int val : nums){
+            if(heap.size()<k ){
+                heap.offer(val);
+            }else if(heap.peek() < val) {
+                heap.poll();
+                heap.offer(val);
+            }
+        }
+        return heap.peek();
+    }
+
     public int findKthLargest(int[] nums, int k) {
         //构造堆
         int[] heap=new int[nums.length+1];
